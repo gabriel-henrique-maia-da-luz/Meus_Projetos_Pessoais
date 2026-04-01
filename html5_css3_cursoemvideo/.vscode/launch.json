@@ -9,8 +9,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open modulo1_html5",
-            "file": "c:\\Users\\Mmgga\\Documents\\MeusProjetos\\html5_css3_cursoemvideo_modulo1\\index.html"
+            "name": "Open modulo1.html in Chrome",
+            "file": "c:\\Users\\Mmgga\\Documents\\MeusProjetos\\html5_css3_cursoemvideo_modulo1\\modulo1.html"
         }
     ]
 }
