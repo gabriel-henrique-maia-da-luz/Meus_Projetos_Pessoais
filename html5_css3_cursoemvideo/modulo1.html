@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicons/Steve-Zondicons-Book-Reference.16.png" type="image/x-icon">
-    <title>Exercicio 1</title>
+    <link rel="shortcut icon" href="favicons/favicon.ico" type="image/x-icon">
+    <title>Anotações- HTML5 Módulo 1</title>
 </head>
 <body>
     <h1>Olá, Mundo!</h1>
@@ -20,12 +20,13 @@
 
     <h1>REGRAS BÁSICAS EM HTML</h1>
     <br>
-    <p>     1. As tags HTML são escritas entre os sinais de menor e maior (&alt; e &gt;).</p>
+    <p>     1. As tags HTML são escritas entre os sinais de menor e maior (&lt; e &gt;).</p>
     <p>     2. A maioria das tags tem uma tag de abertura e uma tag de fechamento, mas algumas são auto-fechadas.</p>
     <p>     3. O conteúdo de uma página HTML é colocado entre as tags de abertura e fechamento.</p>
     <p>     4. O código HTML é interpretado pelo navegador para exibir a página corretamente.</p>
     <p>     5. As tags HTML são case-sensitive, ou seja, <strong>&lt;P&gt;</strong> e <strong>&lt;p&gt;</strong> são diferentes.</p>
-    <h3>As tags HTML mais usadas são: </h3>
+    <br>
+    <h2>As tags HTML mais usadas são: </h2>
     <p><strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong> - Títulos</p>
     <p><strong>&lt;p&gt;</strong> - Parágrafo</p>
     <p><strong>&lt;strong&gt;</strong> - Negrito</p>
@@ -46,7 +47,7 @@
     <h1>Simbolos e Emojis em HTML</h1>
     <p>Os símbolos e emojis podem ser inseridos em HTML usando códigos especiais ou diretamente do teclado.</p>  <!-- Exemplo de código para inserir um símbolo de coração usando código HTML -->
 
-    <h6>Símbolos:</h6>
+    <h2>Símbolos:</h2>
     <p>&reg; = <strong>&amp;reg;</strong><br>
     &copy; = <strong>&amp;copy;</strong><br>
     &trade; = <strong>&amp;trade;</strong><br>
@@ -63,7 +64,7 @@
     &hearts; = <strong>&amp;hearts;</strong><br>
     &star; = <strong>&amp;star;</strong><br>
     </p> <br>
-    <h6>Emojis:</h6>
+    <h2>Emojis:</h2>
     <p>&#x1F60A = &amp;#x1F60A <br>(&#x = fixo / 1F60A = código do emoji) <br> <br>
     &#x1F3B8 = &amp;#x1F3B8 <br> (&#x = fixo / 1F3B8 = código do emoji) <br> <br>
     &#x1F377 = &amp;#x1F377 <br> (&#x = fixo / 1F377 = código do emoji) <br> <br>
@@ -75,18 +76,30 @@
 
 
     <h1>Formatos de imagens em HTML:</h1> <br>
-    <h6>PNG, JPEG, GIF, SVG</h6> <br>
+    <h2>PNG, JPEG, GIF, SVG</h2> <br>
     <p>O formato PNG (Portable Network Graphics) é amplamente utilizado para imagens com transparência e gráficos simples.</p>
     <p>O formato JPEG (Joint Photographic Experts Group) é ideal para fotografias e imagens com muitos detalhes, pois oferece uma boa compressão sem perda significativa de qualidade.</p>
     <p>O formato GIF (Graphics Interchange Format) é conhecido por suportar animações e é frequentemente usado para criar imagens animadas, embora tenha uma paleta de cores limitada.</p>
     <p>O formato SVG (Scalable Vector Graphics) é um formato de imagem vetorial que é escalável sem perda de qualidade, tornando-o ideal para gráficos, logotipos e ícones.</p>
+
+
+    <br>
+
+
+
+
+
+
+
     <h1>Imagens</h1>
     <p>Você pode inserir imagens em seu documento HTML usando o elemento &lt;img&gt;.</p>
     <p>Logo após de digitar o código, você pode adicionar a imagem usando o atributo src, colocando o caminho da imagem entre aspas ou o URL da imagem da internet.</p>
     <p>E o atributo alt é usado para fornecer uma descrição alternativa da imagem, caso ela não possa ser exibida.</p>
     <img src="imagens/logo html5.png" alt="logo HTML5"> <!-- Atributo src é usado para especificar o caminho da imagem e o atributo alt é usado para fornecer uma descrição alternativa da imagem, caso ela não possa ser exibida. -->
     <br>
-    <p>Para editar o tamanho da imagem, você pode usar os atributos width e height. Mas na video-aula, o professor nos ensinou outra forma de manipular o tamanho das imagens, no GIMP.</p>
+    <h2>Manipulando o Tamanho das Imagens</h2>
+    <p>Para editar o tamanho da imagem, você pode usar os atributos width e height.</p>
+    <p>Mas na video-aula, o professor nos ensinou outra forma de manipular o tamanho das imagens, no GIMP.</p>
     <br>
     <img src="imagens/logo css3.png" alt="logo CSS3">
     <p>tambem tem como colocar imagens online adicionando o Link da imagem, como dito anteriormente. <br>Mas caso o site não tenha acesso a internet a imagem não será exibida.</p><br>
@@ -95,19 +108,72 @@
 
 
 
+
+
+
     <h1>Favicons</h1>
     <p>Favicons são pequenas imagens associadas a um site, exibidas na aba do navegador e em outros lugares onde o site é referenciado.</p>
     <p>Basicamente, um favicon é um ícone pequeno que representa um website e é exibido na aba do navegador, na barra de endereços e em outros locais onde o site é acessado.</p>
     <p>Ou seja, é o ícone que aparece na aba do navegador ao lado do título da página.</p>
-    <p>Para criar um favicon, você pode usar uma imagem quadrada, geralmente com dimensões de 16x16 pixels ou 32x32 pixels. O formato mais comum para favicons é o .ico, mas também é possível usar formatos como .png ou .svg.</p>
-    <h5>Formas de criar seu próprio favicon:</h5>
-    <p>Pelo site Icon Archive</p>
-    <img src="favicons/Steve-Zondicons-Book-Reference.16.png" alt="Favicon">
-    <p>Pelo site Favicon.io</p>
-    <img src="favicons/Book-Reference.ico" alt="Favicon">
-    <p>Pelo site Favicon Generator</p>
-    <img src="favicons/Favicon-Generator.ico" alt="Favicon">
+    <p>Para criar um favicon, você pode usar uma imagem quadrada, geralmente com dimensões de 16x16 pixels ou 32x32 pixels. O formato mais comum para favicons é o .ico, mas também é possível usar formatos como .png ou .svg.</p> <br>
+    <h2>Sites para criar seu próprio favicon:</h2> 
+    <h3>Icon Archive:</h3>
+    <img src="favicons/Steve-Zondicons-Book-Reference.16.png" alt="Favicon feito no Icon Archive"> <br>
+    <h3>Favicon.io OU Favicon.cc</h3>
+    <img src="favicons/favicon.ico" alt="Favicon feito no Favicon.cc"> <br>
+    <h2>Adicionando Favicon</h2>
     <p>Para adicionar um favicon ao seu site, você pode usar a tag &lt;link&gt; no cabeçalho(head) do documento HTML, escolhendo o arquivo do favicon.</p>
+
+    <br>
+
+
+
+
+    <h1>Hierarquia de Títulos</h1>
+    <p>Em HTML, existem seis níveis de títulos, que vão de &lt;h1&gt; a &lt;h6&gt;. O título &lt;h1&gt; é o mais importante e geralmente é usado para o título principal da página, enquanto os títulos &lt;h2&gt; a &lt;h6&gt; são usados para subtítulos e seções subsequentes.</p>
+    <p>A hierarquia de títulos é importante para a estruturação do conteúdo e para a acessibilidade, pois ajuda os leitores a entenderem a organização do conteúdo e facilita a navegação em dispositivos assistivos.</p>
+    <p>É recomendado usar os títulos de forma hierárquica, ou seja, começar com &lt;h1&gt; para o título principal e usar os títulos subsequentes (&lt;h2&gt;, &lt;h3&gt;, etc.) para organizar o conteúdo em seções e subseções.</p>
+    <p>Além disso, os títulos também são importantes para o SEO (Search Engine Optimization), pois os motores de busca usam os títulos para entenderem a estrutura e o conteúdo da página.</p>
+    <p>Por Exemplo:</p>
+    <p>Título Principal (<strong>h1</strong>) </p>
+    <p>   🠒  Subtítulo 1 (<strong>h2</strong>) </p>
+    <p>        🠒 Subtítulo 1.1 (<strong>h3</strong>) </p>
+    <p>   🠒  Subtítulo 2 (<strong>h2</strong>) </p>
+    <p>   🠒  Subtítulo 3 (<strong>h2</strong>) </p>
+    <p>        🠒 Subtítulo 3.1 (<strong>h3</strong>) </p>
+    <p>        🠒 Subtítulo 3.2 (<strong>h3</strong>) </p>
+    <br>
+
+
+
+
+
+    <h1>Semântica em HTML5</h1>
+    <p>A semântica em HTML5 refere-se ao uso de elementos que têm significado específico e descrevem a estrutura e o conteúdo do documento, tornando-o mais acessível e compreensível para usuários e motores de busca.</p>
+    <!--        <p>Alguns dos elementos semânticos mais comuns em HTML5 incluem:</p>
+    <p><strong>&lt;header&gt;</strong> - Representa o cabeçalho de uma página ou seção, geralmente contendo o título, logotipo e navegação.</p>
+    <p><strong>&lt;nav&gt;</strong> - Representa a seção de navegação de um site, contendo links para outras páginas ou seções.</p>
+    <p><strong>&lt;main&gt;</strong> - Representa o conteúdo principal de uma página, que é único e central para o propósito do documento.</p>
+    <p><strong>&lt;article&gt;</strong> - Representa um conteúdo independente e auto-contido, como um artigo de blog ou uma notícia.</p>
+    <p><strong>&lt;section&gt;</strong> - Representa uma seção genérica de um documento, que pode conter um título e outros elementos relacionados.</p>
+    <p><strong>&lt;aside&gt;</strong> - Representa um conteúdo relacionado, mas não essencial, como uma barra lateral ou um bloco de informações adicionais.</p>
+    <p><strong>&lt;footer&gt;</strong> - Representa o rodapé de uma página ou seção, geralmente contendo informações de contato, direitos autorais e links para outras páginas.</p>
+    O uso de elementos semânticos em HTML5 melhora a acessibilidade, a estruturação do conteúdo e a otimização para motores de busca, tornando o site mais fácil de usar e entender para os usuários e para os mecanismos de pesquisa     -->
+
+    <h1>Formatação de Texto</h1>
+    <h2>Negrito/Destaque:</h2>
+    <p>Para criar um texto em negrito em HTML, você pode usar a tag <b>&lt;strong&gt;</b> ou a tag <b>&lt;b&gt;</b>.</p>
+    <p>A tag <strong>&lt;strong&gt;</strong> é usada para indicar que o texto tem uma importância especial ou ênfase, <br>enquanto a tag <strong>&lt;b&gt;</strong> é usada apenas para estilizar o texto em negrito, sem transmitir nenhum significado adicional.</p>
+    <h2>Italico/Ênfase:</h2>
+    <p>Para criar um texto em itálico em HTML, você pode usar a tag <i>&lt;em&gt;</i> ou a tag <i>&lt;i&gt;</i>.</p>
+    <p>A tag <em>&lt;em&gt;</em> é usada para indicar que o texto tem uma ênfase especial, <br>enquanto a tag <em>&lt;i&gt;</em> é usada apenas para estilizar o texto em itálico, sem transmitir nenhum significado adicional.</p>
+
+
+    <h3>OBS:</h3> 
+    <p>Para envelopar com abreviatura de tag, basta selecionar o texto e depois clicar em <strong>Ctrl + Shift + P</strong>, selecionar a opção <em>"Wrap with Abbreviation/Envolver com Abreviação"</em> e digitar a tag desejada.</p>
+
+    <p>As tags <b>i</b> e <b>b</b> são tags de forma, ou seja, apenas alteram a aparencia do texto.<br>Já as tags <b>strong</b> e <b>em</b> são tags semânticas, ou seja, além de alterar a aparencia, tambem possuem significado e importância para o conteúdo, mudando a hierarquia.</p>
+
 
 </body>
 </html>
