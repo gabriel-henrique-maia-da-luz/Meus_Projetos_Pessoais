@@ -158,15 +158,44 @@
     <p><strong>&lt;section&gt;</strong> - Representa uma seção genérica de um documento, que pode conter um título e outros elementos relacionados.</p>
     <p><strong>&lt;aside&gt;</strong> - Representa um conteúdo relacionado, mas não essencial, como uma barra lateral ou um bloco de informações adicionais.</p>
     <p><strong>&lt;footer&gt;</strong> - Representa o rodapé de uma página ou seção, geralmente contendo informações de contato, direitos autorais e links para outras páginas.</p>
-    O uso de elementos semânticos em HTML5 melhora a acessibilidade, a estruturação do conteúdo e a otimização para motores de busca, tornando o site mais fácil de usar e entender para os usuários e para os mecanismos de pesquisa     -->
+    O uso de elementos semânticos em HTML5 melhora a acessibilidade, a estruturação do conteúdo e a otimização para motores de busca, tornando o site mais fácil de usar e entender para os usuários e para os mecanismos de pesquisa     --> <br>
 
     <h1>Formatação de Texto</h1>
-    <h2>Negrito/Destaque:</h2>
+    <h2>Principais formatações de texto</h2>
+    
+    
+    <h3>Negrito/Destaque:</h3>
     <p>Para criar um texto em negrito em HTML, você pode usar a tag <b>&lt;strong&gt;</b> ou a tag <b>&lt;b&gt;</b>.</p>
     <p>A tag <strong>&lt;strong&gt;</strong> é usada para indicar que o texto tem uma importância especial ou ênfase, <br>enquanto a tag <strong>&lt;b&gt;</strong> é usada apenas para estilizar o texto em negrito, sem transmitir nenhum significado adicional.</p>
-    <h2>Italico/Ênfase:</h2>
+    
+
+    <h3>Italico/Ênfase:</h3>
     <p>Para criar um texto em itálico em HTML, você pode usar a tag <i>&lt;em&gt;</i> ou a tag <i>&lt;i&gt;</i>.</p>
     <p>A tag <em>&lt;em&gt;</em> é usada para indicar que o texto tem uma ênfase especial, <br>enquanto a tag <em>&lt;i&gt;</em> é usada apenas para estilizar o texto em itálico, sem transmitir nenhum significado adicional.</p>
+
+
+    <h3>Marcador de Texto</h3>
+    <p>Para destacar um texto em HTML, você pode usar a tag <mark>&lt;mark&gt;</mark>, que é usada para marcar ou destacar um trecho de texto, geralmente com uma cor de fundo amarela.</p>
+    
+    
+    <h3>Texto deletado</h3>
+    <p>Para criar um texto deletado em HTML, você pode usar a tag &lt;del&gt;.</p>
+    <p><del>Este é um texto deletado.</del></p>
+    
+    
+    <h3>Texto sublinhado</h3>
+    <p>Para criar um texto inserido em HTML, você pode usar a tag &lt;ins&gt;.</p>
+    <p><ins>Este é um texto sublinhado sem semântica.</ins></p>
+    <p>Ou você pode usar a tag &lt;u&gt; para sublinhar o texto, porem não contem semântica.</p>
+    <p><u>Este é um texto sublinhado com semântica.</u></p>
+    
+    
+    <h3>Texto subscrito e sobrescrito</h3>
+    <p>Para criar um texto subscrito em HTML, você pode usar a tag &lt;sub&gt;.</p>
+    <p>EXEMPLO: H<sub>2</sub>O</p>
+    <p>Para criar um texto sobrescrito em HTML, você pode usar a tag &lt;sup&gt;.</p>
+    <p>EXEMPLO: E = mc<sup>2</sup></p>
+
 
 
     <h3>OBS:</h3> 
@@ -174,6 +203,175 @@
 
     <p>As tags <b>i</b> e <b>b</b> são tags de forma, ou seja, apenas alteram a aparencia do texto.<br>Já as tags <b>strong</b> e <b>em</b> são tags semânticas, ou seja, além de alterar a aparencia, tambem possuem significado e importância para o conteúdo, mudando a hierarquia.</p>
 
+    <p>Para mudar a cor da marcação, a cor de fundo de um elemento, dentre outros, você pode usar o CSS.</p>
+    <br>
 
+    <h2>Outras formatações</h2>
+    
+    
+    <h3>Código-Fonte</h3>
+    <p>Para criar um texto formatado como código-fonte em HTML, você pode usar a tag &lt;code&gt;.</p>
+    <p>EXEMPLO: <code>&lt;div&gt;Este é um exemplo de código-fonte em HTML.&lt;/div&gt;</code></p>
+    <p>Porém o code não tem indentação, diferente da tag &lt;pre&gt;.</p>
+    
+    
+    <h3>Preformatação</h3>
+    <p>Para criar um texto preformatado em HTML, você pode usar a tag &lt;pre&gt;.</p>
+    <h4>EXEMPLO COM O &lt;pre&gt;:</h4>
+    <pre>
+    <code>
+    #include &lt;stdio.h&gt;
+        
+    int main() {
+        printf("Olá, Mundo!");
+        return 0;
+            
+    }
+    </code>
+    </pre>
+    <h4>EXEMPLO SEM O &lt;pre&gt;:</h4>
+    <code>
+    #include &lt;stdio.h&gt;
+
+    int main() {
+        printf("Olá, Mundo!");
+        return 0;
+        
+    }
+    </code>
+
+
+    <h3>Citações</h3>
+    <h4>Citações simples</h4>
+    <p>Para criar uma citação simples em HTML, você pode usar a tag &lt;q&gt;, assim ele adiciona as aspas e mostra ao código que isso é uma citação.</p>
+    <p>Como diria o pai de um amigo meu: <q>O Computador é um burro muito rápido.</q></p>
+    <p>Você pode colocar as aspas manualmente se quiser, mas a tag &lt;q&gt; também adiciona significado, semântica no trecho.</p>
+
+    <h4>Citações completas</h4>
+    <p>Para criar uma citação completa em HTML, você pode usar a tag &lt;blockquote&gt;.</p> 
+    <p>Segue a explicação dada pelo Prof.Willian Canellas sobre o que é um limite, na matéria de Calculo:</p>
+    <blockquote>
+        A ideia central por trás dos limites em matemática é a aproximação. Pense naquela xícara de café fervendo que você acabou de preparar. Ela está a 90°C, mas o ambiente ao redor está 30°C. O que acontece a seguir? A temperatura do café começa a diminuir, buscando um equilíbrio com o ambiente.
+        <br>
+       Nos primeiros minutos, essa queda pode ser quase linear, como se perdesse calor a uma velocidade constante. Mas, à medida que se aproxima dos 30°C, a mudança se torna mais lenta, tendendo a essa temperatura sem talvez nunca a atingir exatamente (ou levando um tempo infinito para isso). Esse "tender a" é a essência do limite.
+        <br>
+        Podemos imaginar uma função que descreve essa queda. Se quisermos saber quando o café atingirá (ou, mais precisamente, se aproximará infinitamente) dos 30°C, estamos procurando um limite.
+    </blockquote>
+    <p>As citações completas são úteis para destacar trechos de texto que são citados de outras fontes.</p>
+
+
+    <h3>Abreviações</h3>
+    <p>Para criar uma abreviação em HTML, você pode usar a tag &lt;abbr&gt;.</p>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS.</abbr> É muito interessante!</p>
+
+
+    <h3>Texto Invertido</h3>
+    <p>Para criar um texto invertido em HTML, você pode usar a tag &lt;bdo&gt;, especificando o atributo dir="rtl".</p>
+    <p><bdo dir="rtl">Este é um texto invertido.</bdo></p>
+
+
+    <h1>Listas</h1>
+    <h2>Listas ordenadas</h2>
+    <p><b>type="1"</b> para números, <br><b>type="A"</b> para letras maiúsculas, <br><b>type="a"</b> para letras minúsculas, <br><b>type="I"</b> para números romanos maiúsculos e <br><b>type="i"</b> para números romanos minúsculos.</p>
+    <p><b>start="1"</b> para iniciar a numeração a partir de um número específico.</p>
+    <h3>Rotina Diária</h3>
+    <ol type="1" start="1"> 
+        
+        <!-- type="1" para números, type="A" para letras maiúsculas, type="a" para letras minúsculas, type="I" para números romanos maiúsculos e type="i" para números romanos minúsculos. -->
+        
+        <!-- start="1" para iniciar a numeração a partir de um número específico. -->
+        
+        <li>Acordar
+        <li>Tomar café
+        <li>Ir para o trabalho
+        <li>Retornar do trabalho
+    </ol>
+    <h2>Listas não ordenadas</h2>
+    <p><b>type="disc"</b> para círculos preenchidos, <br><b>type="circle"</b> para círculos vazados e <br><b>type="square"</b> para quadrados.</p>
+    <h3>Lista de Compras</h3>
+    <ul type="disc">
+        <!-- type="disc" para círculos preenchidos, type="circle" para círculos vazados e type="square" para quadrados. -->
+
+        <li>Maçã
+        <li>Banana
+        <li>Laranja
+        <li>Uva
+    </ul>
+    <h2>Listas Mistas</h2>
+    
+    <h3>Minhas linguagens favoritas</h3>
+    <ol>
+        <li>Antigas
+            <ol type="a">
+                <li>Clipper
+                <li>Visual basic
+                <li>Fortram
+                <li>Delphi
+            </ol>
+        </li>
+        <li>Novas
+            <ol type="a" start="5">
+                <li>Python
+                <li>JavaScript
+                <li>Java
+                <li>C#
+            </ol>
+        </li>
+
+    </ol>
+
+    <h3>Meu Top 3 Jogos Favoritos</h3>
+    <ul>
+        <li>RPG
+            <ol>
+                <li>Final Fantasy
+                <li>Dragon Quest
+                <li>Dark Souls
+            </ol>
+        </li>
+        <li>Ação
+            <ol>
+                <li>God of War
+                <li>Devil May Cry
+                <li>Doom Eternal
+            </ol>
+        </li>
+        <li>Metroidvania
+            <ol>
+                <li>Hollow Knight
+                <li>Ori and the Blind Forest
+                <li>Axiom Verge
+            </ol>
+        </li>
+    </ul>
+
+
+    <h2>Listas de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+            </ol>
+        </li>
+    </ul>
+
+
+    <h2>Listas de definição</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+    </dl>
+
+
+
+
+
+
+
+
+
+    <br><br>
 </body>
 </html>
