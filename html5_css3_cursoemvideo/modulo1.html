@@ -11,10 +11,28 @@
     <h2>Ainda bem, quebrei a maldição!!!</h2>
     <p>Este é o meu exercício em HTML5.</p>
     <p>Estou aprendendo a criar páginas web com HTML5 e CSS3 no site <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a>.</p>
+    <p>Nessa página, abordaremos o Módulo 1, do Capítulo 1 ao 10.</p>
     
 
     <br>
-    
+    <h1>Índice</h1>
+    <ol>
+        <li><a href="#regras-basicas">Regras básicas em HTML</a></li>
+        <li><a href="#paragrafos-quebras">Parágrafos e quebras de linha</a></li>
+        <li><a href="#simbolos-emojis">Símbolos e Emojis em HTML</a></li>
+        <li><a href="#formatos-imagens">Formatos de imagens em HTML</a></li>
+        <li><a href="#imagem">Imagens</a></li>
+        <li><a href="#favicon">Favicons</a></li>
+        <li><a href="#hierarquia">Hierarquia de Títulos</a></li>
+        <li><a href="#semantica">Semântica em HTML5</a></li>
+        <li><a href="#formatacao">Formatação de Texto</a></li>
+        <li><a href="#listas">Listas</a></li>
+        <li><a href="#links">Link's</a></li>
+        <li><a href="#download">Link's para Download</a></li>
+        <li><a href="#link_interno">Link's Internos</a></li>
+    </ol>
+
+    <br>
 
 
 
@@ -36,7 +54,7 @@
 
 
 
-    <h1>Parágrafos e quebras de linha</h1>
+    <h1 id="paragrafos-quebras">Parágrafos e quebras de linha</h1>
     <p>O elemento <strong>&lt;p&gt;</strong><strong>&lt;/p&gt;</strong> é usado para criar parágrafos em HTML. Ele é um elemento de bloco, o que significa que ele ocupa toda a largura disponível e inicia uma nova linha após o seu fechamento.</p>
     <p>O elemento <strong>&lt;br&gt;</strong> é usado para criar quebras de linha em HTML. Ele é um elemento vazio, o que significa que ele não tem uma tag de fechamento. Ele é usado para criar uma nova linha sem iniciar um novo parágrafo.</p>
     <br><br>
@@ -44,10 +62,10 @@
 
 
 
-    <h1>Simbolos e Emojis em HTML</h1>
+    <h1 id="simbolos-emojis">Simbolos e Emojis em HTML</h1>
     <p>Os símbolos e emojis podem ser inseridos em HTML usando códigos especiais ou diretamente do teclado.</p>  <!-- Exemplo de código para inserir um símbolo de coração usando código HTML -->
 
-    <h2>Símbolos:</h2>
+    <h2 id="simbolos">Símbolos:</h2>
     <p>&reg; = <strong>&amp;reg;</strong><br>
     &copy; = <strong>&amp;copy;</strong><br>
     &trade; = <strong>&amp;trade;</strong><br>
@@ -64,7 +82,7 @@
     &hearts; = <strong>&amp;hearts;</strong><br>
     &star; = <strong>&amp;star;</strong><br>
     </p> <br>
-    <h2>Emojis:</h2>
+    <h2 id="emojis">Emojis:</h2>
     <p>&#x1F60A = &amp;#x1F60A <br>(&#x = fixo / 1F60A = código do emoji) <br> <br>
     &#x1F3B8 = &amp;#x1F3B8 <br> (&#x = fixo / 1F3B8 = código do emoji) <br> <br>
     &#x1F377 = &amp;#x1F377 <br> (&#x = fixo / 1F377 = código do emoji) <br> <br>
@@ -75,7 +93,7 @@
 
 
 
-    <h1>Formatos de imagens em HTML:</h1> <br>
+    <h1 id="formatos-imagens">Formatos de imagens em HTML:</h1> <br>
     <h2>PNG, JPEG, GIF, SVG</h2> <br>
     <p>O formato PNG (Portable Network Graphics) é amplamente utilizado para imagens com transparência e gráficos simples.</p>
     <p>O formato JPEG (Joint Photographic Experts Group) é ideal para fotografias e imagens com muitos detalhes, pois oferece uma boa compressão sem perda significativa de qualidade.</p>
@@ -91,7 +109,7 @@
 
 
 
-    <h1>Imagens</h1>
+    <h1 id="imagem">Imagens</h1>
     <p>Você pode inserir imagens em seu documento HTML usando o elemento &lt;img&gt;.</p>
     <p>Logo após de digitar o código, você pode adicionar a imagem usando o atributo src, colocando o caminho da imagem entre aspas ou o URL da imagem da internet.</p>
     <p>E o atributo alt é usado para fornecer uma descrição alternativa da imagem, caso ela não possa ser exibida.</p>
@@ -111,7 +129,7 @@
 
 
 
-    <h1>Favicons</h1>
+    <h1 id="favicon">Favicons</h1>
     <p>Favicons são pequenas imagens associadas a um site, exibidas na aba do navegador e em outros lugares onde o site é referenciado.</p>
     <p>Basicamente, um favicon é um ícone pequeno que representa um website e é exibido na aba do navegador, na barra de endereços e em outros locais onde o site é acessado.</p>
     <p>Ou seja, é o ícone que aparece na aba do navegador ao lado do título da página.</p>
@@ -129,7 +147,7 @@
 
 
 
-    <h1>Hierarquia de Títulos</h1>
+    <h1 id="hierarquia">Hierarquia de Títulos</h1>
     <p>Em HTML, existem seis níveis de títulos, que vão de &lt;h1&gt; a &lt;h6&gt;. O título &lt;h1&gt; é o mais importante e geralmente é usado para o título principal da página, enquanto os títulos &lt;h2&gt; a &lt;h6&gt; são usados para subtítulos e seções subsequentes.</p>
     <p>A hierarquia de títulos é importante para a estruturação do conteúdo e para a acessibilidade, pois ajuda os leitores a entenderem a organização do conteúdo e facilita a navegação em dispositivos assistivos.</p>
     <p>É recomendado usar os títulos de forma hierárquica, ou seja, começar com &lt;h1&gt; para o título principal e usar os títulos subsequentes (&lt;h2&gt;, &lt;h3&gt;, etc.) para organizar o conteúdo em seções e subseções.</p>
@@ -148,7 +166,7 @@
 
 
 
-    <h1>Semântica em HTML5</h1>
+    <h1 id="semantica">Semântica em HTML5</h1>
     <p>A semântica em HTML5 refere-se ao uso de elementos que têm significado específico e descrevem a estrutura e o conteúdo do documento, tornando-o mais acessível e compreensível para usuários e motores de busca.</p>
     <!--        <p>Alguns dos elementos semânticos mais comuns em HTML5 incluem:</p>
     <p><strong>&lt;header&gt;</strong> - Representa o cabeçalho de uma página ou seção, geralmente contendo o título, logotipo e navegação.</p>
@@ -160,37 +178,37 @@
     <p><strong>&lt;footer&gt;</strong> - Representa o rodapé de uma página ou seção, geralmente contendo informações de contato, direitos autorais e links para outras páginas.</p>
     O uso de elementos semânticos em HTML5 melhora a acessibilidade, a estruturação do conteúdo e a otimização para motores de busca, tornando o site mais fácil de usar e entender para os usuários e para os mecanismos de pesquisa     --> <br>
 
-    <h1>Formatação de Texto</h1>
+    <h1 id="formatacao">Formatação de Texto</h1>
     <h2>Principais formatações de texto</h2>
     
     
-    <h3>Negrito/Destaque:</h3>
+    <h3 id="negrito">Negrito/Destaque:</h3>
     <p>Para criar um texto em negrito em HTML, você pode usar a tag <b>&lt;strong&gt;</b> ou a tag <b>&lt;b&gt;</b>.</p>
     <p>A tag <strong>&lt;strong&gt;</strong> é usada para indicar que o texto tem uma importância especial ou ênfase, <br>enquanto a tag <strong>&lt;b&gt;</strong> é usada apenas para estilizar o texto em negrito, sem transmitir nenhum significado adicional.</p>
     
 
-    <h3>Italico/Ênfase:</h3>
+    <h3 id="italico">Italico/Ênfase:</h3>
     <p>Para criar um texto em itálico em HTML, você pode usar a tag <i>&lt;em&gt;</i> ou a tag <i>&lt;i&gt;</i>.</p>
     <p>A tag <em>&lt;em&gt;</em> é usada para indicar que o texto tem uma ênfase especial, <br>enquanto a tag <em>&lt;i&gt;</em> é usada apenas para estilizar o texto em itálico, sem transmitir nenhum significado adicional.</p>
 
 
-    <h3>Marcador de Texto</h3>
+    <h3 id="mark">Marcador de Texto</h3>
     <p>Para destacar um texto em HTML, você pode usar a tag <mark>&lt;mark&gt;</mark>, que é usada para marcar ou destacar um trecho de texto, geralmente com uma cor de fundo amarela.</p>
     
     
-    <h3>Texto deletado</h3>
+    <h3 id="deletado">Texto deletado</h3>
     <p>Para criar um texto deletado em HTML, você pode usar a tag &lt;del&gt;.</p>
     <p><del>Este é um texto deletado.</del></p>
     
     
-    <h3>Texto sublinhado</h3>
+    <h3 id="sublinhado">Texto sublinhado</h3>
     <p>Para criar um texto inserido em HTML, você pode usar a tag &lt;ins&gt;.</p>
     <p><ins>Este é um texto sublinhado sem semântica.</ins></p>
     <p>Ou você pode usar a tag &lt;u&gt; para sublinhar o texto, porem não contem semântica.</p>
     <p><u>Este é um texto sublinhado com semântica.</u></p>
     
     
-    <h3>Texto subscrito e sobrescrito</h3>
+    <h3 id="subscrito">Texto subscrito e sobrescrito</h3>
     <p>Para criar um texto subscrito em HTML, você pode usar a tag &lt;sub&gt;.</p>
     <p>EXEMPLO: H<sub>2</sub>O</p>
     <p>Para criar um texto sobrescrito em HTML, você pode usar a tag &lt;sup&gt;.</p>
@@ -206,16 +224,16 @@
     <p>Para mudar a cor da marcação, a cor de fundo de um elemento, dentre outros, você pode usar o CSS.</p>
     <br>
 
-    <h2>Outras formatações</h2>
+    <h2 id="outras-formatacoes">Outras formatações</h2>
     
     
-    <h3>Código-Fonte</h3>
+    <h3 id="codigo-fonte">Código-Fonte</h3>
     <p>Para criar um texto formatado como código-fonte em HTML, você pode usar a tag &lt;code&gt;.</p>
     <p>EXEMPLO: <code>&lt;div&gt;Este é um exemplo de código-fonte em HTML.&lt;/div&gt;</code></p>
     <p>Porém o code não tem indentação, diferente da tag &lt;pre&gt;.</p>
     
     
-    <h3>Preformatação</h3>
+    <h3 id="preformatacao">Preformatação</h3>
     <p>Para criar um texto preformatado em HTML, você pode usar a tag &lt;pre&gt;.</p>
     <h4>EXEMPLO COM O &lt;pre&gt;:</h4>
     <pre>
@@ -241,13 +259,13 @@
     </code>
 
 
-    <h3>Citações</h3>
+    <h3 id="citação">Citações</h3>
     <h4>Citações simples</h4>
     <p>Para criar uma citação simples em HTML, você pode usar a tag &lt;q&gt;, assim ele adiciona as aspas e mostra ao código que isso é uma citação.</p>
     <p>Como diria o pai de um amigo meu: <q>O Computador é um burro muito rápido.</q></p>
     <p>Você pode colocar as aspas manualmente se quiser, mas a tag &lt;q&gt; também adiciona significado, semântica no trecho.</p>
 
-    <h4>Citações completas</h4>
+    <h4 id="citações-completas">Citações completas</h4>
     <p>Para criar uma citação completa em HTML, você pode usar a tag &lt;blockquote&gt;.</p> 
     <p>Segue a explicação dada pelo Prof.Willian Canellas sobre o que é um limite, na matéria de Calculo:</p>
     <blockquote>
@@ -260,18 +278,18 @@
     <p>As citações completas são úteis para destacar trechos de texto que são citados de outras fontes.</p>
 
 
-    <h3>Abreviações</h3>
+    <h3 id="abreviacoes">Abreviações</h3>
     <p>Para criar uma abreviação em HTML, você pode usar a tag &lt;abbr&gt;.</p>
     <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS.</abbr> É muito interessante!</p>
 
 
-    <h3>Texto Invertido</h3>
+    <h3 id="invertido">Texto Invertido</h3>
     <p>Para criar um texto invertido em HTML, você pode usar a tag &lt;bdo&gt;, especificando o atributo dir="rtl".</p>
     <p><bdo dir="rtl">Este é um texto invertido.</bdo></p>
 
 
-    <h1>Listas</h1>
-    <h2>Listas ordenadas</h2>
+    <h1 id="listas">Listas</h1>
+    <h2 id="ordenadas">Listas ordenadas</h2>
     <p><b>type="1"</b> para números, <br><b>type="A"</b> para letras maiúsculas, <br><b>type="a"</b> para letras minúsculas, <br><b>type="I"</b> para números romanos maiúsculos e <br><b>type="i"</b> para números romanos minúsculos.</p>
     <p><b>start="1"</b> para iniciar a numeração a partir de um número específico.</p>
     <h3>Rotina Diária</h3>
@@ -286,7 +304,7 @@
         <li>Ir para o trabalho
         <li>Retornar do trabalho
     </ol>
-    <h2>Listas não ordenadas</h2>
+    <h2 id="nao-ordenadas">Listas não ordenadas</h2>
     <p><b>type="disc"</b> para círculos preenchidos, <br><b>type="circle"</b> para círculos vazados e <br><b>type="square"</b> para quadrados.</p>
     <h3>Lista de Compras</h3>
     <ul type="disc">
@@ -297,7 +315,7 @@
         <li>Laranja
         <li>Uva
     </ul>
-    <h2>Listas Mistas</h2>
+    <h2 id="mistas">Listas Mistas</h2>
     
     <h3>Minhas linguagens favoritas</h3>
     <ol>
@@ -345,7 +363,7 @@
         </li>
     </ul>
 
-    <h2>Listas de definição</h2>
+    <h2 id="listas-definicao">Listas de definição</h2>
     <dl>
         <dt>HTML</dt>
         <dd>HyperText Markup Language</dd>
@@ -353,26 +371,30 @@
         <dd>Cascading Style Sheets</dd>
     </dl>
 
-    <h1>Link's</h1>
+    <h1 id="links">Link's</h1>
     <p>Para criar um link em HTML, você pode usar a tag &lt;a&gt; (âncora) e o atributo href para especificar o destino do link.</p>
     <p>EXEMPLO: Estou estudando HTML5 e CSS3 pelo site do <a href="https://www.cursoemvideo.com" target="_blank">Curso em Vídeo</a></p>
     <p><a href="https://youtu.be/HwAPLk_sQ3w?si=ofadkLY_cFwZLxtL" target="_blank">Perola da internet</a></p>
     <p><a href="https://youtu.be/dQw4w9WgXcQ?si=OZXPXfm72Dnc2l_T" target="_blank">Perola da internet - parte 2</a></p>
 
-    <h2 id="link_interno">Link's Internos</h2>
-    <p>Apartir daqui, eu irei continuar na <a href="modulo1_pag2.html" rel="next" target="_self">2º página</a>.</p>
-    <p>Links internos são links que apontam para outras partes do mesmo documento ou para outros documentos dentro do mesmo site. Eles são usados para facilitar a navegação e a organização do conteúdo em um site.</p>
-    <p>Para criar um link interno, você pode usar a tag &lt;a&gt; com o atributo href, especificando o destino do link usando um identificador (ID) ou um nome de âncora.</p>
-    <p>EXEMPLO: <a href="#regras-basicas">Ir para Imagens</a></p>
-    <p>Para criar um link interno para uma seção específica do mesmo documento, você pode atribuir um ID a essa seção usando o atributo id e, em seguida, usar esse ID como destino do link.</p>  
+   
 
-    <h1>Link's para Download</h1>
+    <h2 id="download">Link's para Download</h1>
     <p>Para criar um link para download em HTML, você pode usar a tag &lt;a&gt; com o atributo href, especificando o caminho do arquivo que deseja disponibilizar para download. Além disso, você pode usar o atributo download para sugerir que o navegador baixe o arquivo em vez de abri-lo.</p>
     <ol>
         <li><a href="linkDownloads/GERAISAPLICADOSUMASAIDA.docx" download>Download do arquivo PDF</a></li>
-    </ol>
+    </ol> <br>
 
+    <h2 id="link_interno">Link's Internos</h2>
+    
+    <p>Links internos são links que apontam para outras partes do mesmo documento ou para outros documentos dentro do mesmo site. Eles são usados para facilitar a navegação e a organização do conteúdo em um site.</p>
+    <p>Para criar um link interno, você pode usar a tag &lt;a&gt; com o atributo href, especificando o destino do link usando um identificador (ID) ou um nome de âncora.</p>
+    <p>EXEMPLO: <a href="#imagem">Ir para Imagens</a></p>
+    <p>Para criar um link interno para uma seção específica do mesmo documento, você pode atribuir um ID a essa seção usando o atributo id e, em seguida, usar esse ID como destino do link.</p> <br>
+    
+    <p>A partir daqui, eu irei continuar na <a href="modulo1_pag2.html" rel="next" target="_self">2º página</a>.</p>
 
+    <p><a href="#top">Voltar ao início</a></p>
 
     <br><br>
 </body>
