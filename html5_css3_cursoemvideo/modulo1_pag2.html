@@ -13,12 +13,42 @@
 
     <p>Nessa página, abordaremos o Módulo 1, do Capítulo 11 ao ...</p>
 
+    <h1>Imagens Dinâmicas</h1>
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho da janela do navegador</p>
+
 
     <picture>
-        <img src="" alt="">
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1000px)" srcset="imagens/imagem_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="Imagem flexível G">
     </picture>
 
+    <p>Para fazer essas imagens dinâmicas, utilizamos a tag &lt;picture&gt; e várias tags &lt;source&gt; com diferentes condições de mídia.</p>
+    <p></p>
 
+    <p>Exemplo:</p>
 
+    <pre>
+    <code>
+
+    &lt;picture&gt;
+        &lt;source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png"&gt;
+        &lt;source media="(max-width: 1000px)" srcset="imagens/imagem_m.png" type="image/png"&gt;
+        &lt;img src="imagens/imagem_g.png" alt="Imagem flexível G"&gt;
+    &lt;/picture&gt;
+
+    </code>
+    </pre>
+
+    <p>Onde o &lt;picture&gt; é a tag principal que contém as diferentes fontes de imagem, e os &lt;source&gt; são as condições de mídia que determinam qual imagem será exibida.</p>
+    <p>Nesse caso, a imagem exibida dependerá do tamanho da janela do navegador. <br>Com menos de 750px, a imagem pequena <b>(imagem_p.png)</b> será exibida; <br>entre 750px e 1000px, a imagem média <b>(imagem_m.png)</b> será exibida; <br>e acima de 1000px, a imagem grande <b>(imagem_g.png)</b> será exibida.</p>
+    <p>Uma observação importante é que a ordem do tamanho sempre deve ser do menor para o maior.</p>
+
+    <h1>Adicionando áudio</h1>
+
+    <p>Para adicionar áudio em uma página HTML5, utilizamos a tag &lt;audio&gt;.</p>
+
+    <audio src="audio/Abstraction - Big band Ver.  KittenSneeze (Ft. Micheal Kovach and Amanda Hufford)  ENGLISH LYRICS - Vinea. (youtube).mp3" controls></audio>
 </body>
 </html>
